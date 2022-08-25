@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces" rel="stylesheet">
+
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      /* primary */
+      --main-bg-color: brown;
+      --Soft-red: hsl(7, 99%, 70%);
+      --Yellow: hsl(51, 100%, 49%);
+      /*  cyan (graphic design text) */
+      --Dark-desaturated: hsl(167, 40%, 24%);
+      /*  (photography text) */
+      --Dark-blue: hsl(198, 62%, 26%);
+      /* footer */
+      --Dark-moderate: hsl(168, 34%, 41%);
+      /* secondary */ 
+    
+
+      /* font */
+    }
+
+    /* all */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      Font size: 18px
+    }
+
+    /* .addspace {
+      height: 100vh;
+    } */
+
+    /* all */
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    /* images */
+    .iamgeall {
+      background-repeat: no-repeat;
+      /* Do not repeat the image */
+      background-size: cover;
+      /* Resize the background image to cover the entire container */
+    }
+     #banner {
+      background-image: url("/images/desktop/image-header.jpg");
+      /* The image used */
+      background-position: bottom;  
+    }
+    #sec1image {
+      background-image: url("/images/desktop/image-transform.jpg");
+      /* The image used */
+      background-position: center;
+    }
+    #sec2image {
+      background-image: url("/images/mobile/image-stand-out.jpg");
+      /* The image used */
+      background-position: center;
+    }
+
+    /* images */
+    
+    
+
+    .section {
+      height: 100vh;
+    }
+
+    /* navcss********** */
+    #nav>ul>li {
+      display: inline;
+    }
+
+    #nav,
+    #logocontainer {
+      display: inline-block;
+
+      padding: 20px;
+    }
+
+    #header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    #nav>ul>li>a {
+      text-decoration: none;
+      padding: 10px 25px;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+
+    }
+
+    #nav>ul>li>a:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 25px;
+    }
+
+    /* ************** */
+    h1, h2 {
+      font-family: Fraunces;
+      font-weight: 900;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 4em;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      color: black;
+    }
+  /*  column */
+    .seccol {
+      height: 100vh;
+      float: left;
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* footer */
+    #footer {
+      background-color: var(--Dark-moderate);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="section iamgeall" id="banner">
+      <!-- header under banner -->
+      <div id="header">
+        <div id="logocontainer">
+          <a href="#">
+            <img src="/images/logo.svg">
+          </a>
+
+        </div>
+        <div id="nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h1>We are creatives</h1>
+    </div>
+    <!-- section1 -->
+    <div class="section" id="section1">
+      <div class="seccol">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <button>Learn more</button>
+      </div>
+
+      <div class="seccol iamgeall" id="sec1image">
+        <div class="addspace"></div>
+      </div>
+    </div>
+    <!-- section2 -->
+    <div class="section" id="section2">
+      <div class="seccol" id="sec2image">
+        <div class="addspace"></div>
+      </div>
+      <div class="seccol">
+        <h2>Stand out to the right audience</h2>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+          build
+          and extend your brand in digital places.</p>
+        <button>Learn more</button>
+      </div>
+      <div class="seccol iamgeall">
+        <div class="addspace"></div>
+      </div>
+    </div>
+    <!-- section3 -->
+    <div class="section" id="section3">
+      <div class="seccol">
+
+      </div>
+      <div class="seccol">
+        <h2>Graphic design</h2>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+          potential
+          clients’ attention.</p>
+      </div>
+
+      <div class="seccol">
+        <h2>Photography</h2>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p>
+      </div>
+    </div>
+
+    <!-- testimonial -->
+    <div class="section">
+      <h2>Client testimonials</h2>
+      <div class="reviewboxcontainer">
+        <div class="column1">
+
+          <div class="reviewbox">
+            <img>
+            <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were
+              always hit.</p>
+            <p>Emily R.</p>
+            <p>Marketing Director</p>
+          </div>
+          <div class="reviewbox">
+            <img>
+            <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+              enjoyable
+              experience.</p>
+            <p>Thomas S.</p>
+            <p>Chief Operating Officer</p>
+          </div>
+          <div class="reviewbox">
+            <img>
+            <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+            </p>
+            <p>Jennie F.</p>
+            <p>Business Owner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="column4"></div>
+      <div class="column4"></div>
+      <div class="column4"></div>
+      <div class="column4"></div>
+    </div>
+
+    <div class="section" id="footer">
+      <div class="footercol">
+        <img>
+      </div>
+
+      <div class="footercol" id="nav">
+        <ul>
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="footercol">
+        <ul>
+          <li><a><img></a></li>
+          <li><a><img></a></li>
+          <li><a><img></a></li>
+          <li><a><img></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Jeremy Paul Doza</a>.
+  </div>
+</body>
+
+</html>
