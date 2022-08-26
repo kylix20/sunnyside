@@ -25,177 +25,278 @@
       --Dark-desaturated: hsl(167, 40%, 24%);
       /*  (photography text) */
       --Dark-blue: hsl(198, 62%, 26%);
+      
       /* footer */
       --Dark-moderate: hsl(168, 34%, 41%);
       /* secondary */ 
     
-
-      /* font */
     }
 
-    /* all */
+    /* all  start*/
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      Font size: 18px
     }
 
-    /* .addspace {
-      height: 100vh;
-    } */
-
-    /* all */
-    .attribution {
-      font-size: 11px;
+    h1,h2,h3,h4,h5,h6 {
+      font-family: Fraunces;
+    }
+    h1 {
+      font-weight: 900;
       text-align: center;
+      font-size: 60px;
+      color: white;
+      text-transform: uppercase;
+      line-height: 1.3em;
+    }
+    h2{
+      font-weight: 700;
+      text-align: left;
+      font-size: 50px;
+      color: black;
+      line-height: 1.2em;
+    }
+    h3 {
+      font-weight: 700;
+      text-align: left;
+      font-size: 30px;
+      color: black;
+      line-height: 1.2em;
     }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
+    p {
+      font-family: barlow;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
-    /* images */
-    .iamgeall {
-      background-repeat: no-repeat;
-      /* Do not repeat the image */
-      background-size: cover;
-      /* Resize the background image to cover the entire container */
+    /* learn mre botton */
+    .learnbutton {
+      font-family: Fraunces;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
     }
-     #banner {
+
+    html {
+      scroll-behavior: smooth;
+    }
+    
+      /* css for below footer */
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      /* css for below footer */
+
+      /* imageglobal start */
+      .imageall {
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: cover;
+        /* Resize the background image to cover the entire container */
+      }
+      /* imageglobal end */
+
+      /* all section 100 height */
+      .section {
+        height: 100vh;
+      }
+
+      /*  column */
+      .seccol {
+        height: 100vh;
+        float: left;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10% ;
+      }
+      #section1 .seccol,
+      #section2 .seccol {
+        align-items: start;
+      }
+
+    /* section > div:nth-child(1) {
+        padding: 10% ;
+    } */
+    .seccol p {
+      text-align: left;
+    }
+
+
+    /* all end */
+
+/* header start */
+  #homebanner {
+  /* The image used */
       background-image: url("/images/desktop/image-header.jpg");
-      /* The image used */
       background-position: bottom;  
-    }
-    #sec1image {
-      background-image: url("/images/desktop/image-transform.jpg");
-      /* The image used */
-      background-position: center;
-    }
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  /* logo */
+  nav>ul>li {
+    display: inline;
+  }
+
+  nav,
+  #logocontainer {
+    display: inline-block;
+    padding: 20px;
+  }
+  /* nav */
+  nav>ul>li>a {
+    text-decoration: none;
+    padding: 10px 25px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  nav>ul>li>a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+  }
+
+/* header end */
+
+/* section 1 start */
+/* image */
+#sec1image {
+  background-image: url("/images/desktop/image-transform.jpg");
+  background-position: center;
+}
+/* section 1 end */
+
+
+/* section 2 start */
+/* section 2 end */
+
+
+/* section 3 star */
+
+#section3 > .seccol {
+  justify-content: end;
+  text-align: center !important;
+}
+
+#section3 > .seccol > h3,
+#section3 > .seccol > p {
+  text-align: center;
+}
+
+/* section 3 end */
+    
     #sec2image {
       background-image: url("/images/mobile/image-stand-out.jpg");
       /* The image used */
       background-position: center;
     }
 
+    #sec3image1 {
+      background-image: url("/images/desktop/image-graphic-design.jpg");
+      /* The image used */
+      background-position: top;
+    }
+
+    #sec3image2 {
+      background-image: url("/images/desktop/image-photography.jpg");
+      /* The image used */
+      background-position: top;
+    }
     /* images */
+   
     
-    
-
-    .section {
-      height: 100vh;
-    }
-
-    /* navcss********** */
-    #nav>ul>li {
-      display: inline;
-    }
-
-    #nav,
-    #logocontainer {
-      display: inline-block;
-
-      padding: 20px;
-    }
-
-    #header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 50px;
-    }
-
-    #nav>ul>li>a {
-      text-decoration: none;
-      padding: 10px 25px;
-      color: white;
-      font-size: 15px;
-      font-weight: 500;
-      text-transform: uppercase;
-
-    }
-
-    #nav>ul>li>a:hover {
-      background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 25px;
-    }
-
     /* ************** */
-    h1, h2 {
-      font-family: Fraunces;
-      font-weight: 900;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 4em;
-      color: white;
-      text-transform: uppercase;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 2em;
-      color: black;
-    }
-  /*  column */
-    .seccol {
-      height: 100vh;
-      float: left;
-      width: 50%;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
+ 
     /* footer */
     #footer {
       background-color: var(--Dark-moderate);
+    }
+    footer {
+      height: 400px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+
+/* Desktop */
+    @media all and (min-width:1025px) {
+
+    }
+/* tablet  */
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+      
+    }
+/* mobile */
+  @media all and (min-width: 480px) and (max-width: 768px) {
+      
     }
   </style>
 </head>
 
 <body>
+
   <div class="main">
-    <div class="section iamgeall" id="banner">
-      <!-- header under banner -->
-      <div id="header">
+    <!-- banner section start -->
+    <section class="section imageall" id="homebanner">
+      <!-- header -->
+      <header>
+        <!-- logo -->
         <div id="logocontainer">
           <a href="#">
             <img src="/images/logo.svg">
           </a>
-
         </div>
-        <div id="nav">
+        <!-- nav -->
+        <nav>
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-        </div>
-      </div>
+        </nav>
+      </header>
 
       <h1>We are creatives</h1>
-    </div>
-    <!-- section1 -->
-    <div class="section" id="section1">
+    </section>
+    <!-- banner section  end-->
+
+
+
+
+    <!-- section1 start -->
+    <section class="section imageall" id="section1">
       <div class="seccol">
         <h2>Transform your brand</h2>
         <p>We are a full-service creative agency specializing in helping brands grow fast.
           Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <button>Learn more</button>
+        <a class="learnbutton" href="#">Learn more</a>
       </div>
-
-      <div class="seccol iamgeall" id="sec1image">
+      <div class="seccol imageall" id="sec1image">
         <div class="addspace"></div>
       </div>
-    </div>
-    <!-- section2 -->
+    </section>
+    <!-- section1 end -->
+
+
+    <!-- section2 start-->
     <div class="section" id="section2">
-      <div class="seccol" id="sec2image">
+      <div class="seccol imageall" id="sec2image">
         <div class="addspace"></div>
       </div>
       <div class="seccol">
@@ -203,32 +304,28 @@
         <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
           build
           and extend your brand in digital places.</p>
-        <button>Learn more</button>
-      </div>
-      <div class="seccol iamgeall">
-        <div class="addspace"></div>
+          <a class="learnbutton" href="#">Learn more</a>
       </div>
     </div>
-    <!-- section3 -->
+    <!-- section2 end-->
+    <!-- section3 start-->
     <div class="section" id="section3">
-      <div class="seccol">
-
-      </div>
-      <div class="seccol">
-        <h2>Graphic design</h2>
+      <div class="seccol imageall" id="sec3image1">
+        <h3>Graphic design</h3>
         <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
           potential
           clients’ attention.</p>
       </div>
 
-      <div class="seccol">
-        <h2>Photography</h2>
+      <div class="seccol imageall" id="sec3image2">
+        <h3>Photography</h3>
         <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
         </p>
       </div>
     </div>
+    <!-- section3 end-->
 
-    <!-- testimonial -->
+    <!-- testimonial start-->
     <div class="section">
       <h2>Client testimonials</h2>
       <div class="reviewboxcontainer">
@@ -259,6 +356,7 @@
         </div>
       </div>
     </div>
+    <!-- testimonial end-->
 
     <div class="section">
       <div class="column4"></div>
@@ -267,19 +365,20 @@
       <div class="column4"></div>
     </div>
 
-    <div class="section" id="footer">
+    <footer id="footer">
       <div class="footercol">
-        <img>
+        <a href="#">
+          <img src="/images/logo.svg">
+        </a>
       </div>
 
-      <div class="footercol" id="nav">
+      <nav>
         <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
         </ul>
-      </div>
+      </nav>
 
       <div class="footercol">
         <ul>
@@ -289,7 +388,7 @@
           <li><a><img></a></li>
         </ul>
       </div>
-    </div>
+    </footer>
 
   </div>
 
