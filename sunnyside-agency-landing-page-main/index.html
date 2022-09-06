@@ -11,9 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     :root {
@@ -45,10 +47,9 @@
       box-sizing: border-box;
     }
 
-    /* .main {
-      max-width: 1440px;
-      margin: auto;
-    } */
+    .main {
+      background-color: rgba(7, 7, 7, 0);
+    }
 
     body {
       font-family: barlow;
@@ -60,44 +61,59 @@
     h1 {
       font-weight: 900;
       text-align: center;
-      font-size: 60px;
+      font-size: 7vw;
       color: white;
       text-transform: uppercase;
       line-height: 1.3em;
     }
     h2{
       font-weight: 700;
-      text-align: left;
+      text-align: center;
       font-size: 50px;
       color: black;
       line-height: 1.2em;
     }
     h3 {
       font-weight: 700;
-      text-align: left;
+      text-align: center;
       font-size: 30px;
       color: black;
       line-height: 1.2em;
     }
 
-    p {
+    p{
       font-family: barlow;
+      text-align: center;
       font-size: 18px;
       font-weight: 600;
       margin-top: 20px;
       margin-bottom: 20px;
     }
-
-    /* learn mre botton */
-    .learnbutton {
-      font-family: Fraunces;
-      font-size: 18px;
-      font-weight: 700;
-      text-decoration: none;
+    a {
+      text-align: center;
+      font-weight: 700 !important;
     }
 
     html {
       scroll-behavior: smooth;
+    }
+
+    /* custom css */
+    /* space from header */
+    .space1 {
+      height: 50px;
+    }
+    .space2 {
+      height: 100px;
+    }
+    .space3 {
+      height: 150px;
+    }
+
+
+    /* pading  */
+    .setpadding1 {
+      padding: 20px;
     }
     
       /* css for below footer */
@@ -110,188 +126,108 @@
         color: hsl(228, 45%, 44%);
       }
       /* css for below footer */
+    
+    /* **********************************************************************/
 
-      /* imageglobal start */
-      .imageall {
-        background-repeat: no-repeat;
-        /* Do not repeat the image */
-        background-size: cover;
-        /* Resize the background image to cover the entire container */
+    /* header */
+      /* navbar  */
+      .navbar-toggler {
+        border: unset;
       }
-      /* imageglobal end */
-
-      /* all section 100 height */
-      .section {
-        height: 100vh;
-      }
-
-      /*  column */
-      .seccol {
-        height: 100vh;
-        float: left;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      #section1 .seccol,
-      #section2 .seccol {
-        align-items: start;
-      }
-
-    /* section > div:nth-child(1) {
-        padding: 10% ;
-    } */
-    .seccol p {
-      text-align: left;
+      
+    .myheaderbg > ul > li > a {
+        display: inline;
+        padding: 10px 25px !important;   
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 25px;
     }
+    .myheaderbg > ul > li {
+      margin: 20px 0px;
+    }
+    /* header */
 
-
-    /* all end */
-
-/* header start */
-  #homebanner {
-  /* The image used */
+    /* section 1 home banner */
+    #homebanner {
       background-image: url("images/desktop/image-header.jpg");
-      background-position: bottom;  
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  /* logo */
-  nav>ul>li {
-    display: inline;
-  }
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh; 
+    }
+    /* section 1 */
 
-  nav,
-  #logocontainer {
-    display: inline-block;
-    padding: 20px;
-  }
-  /* nav */
-  nav>ul>li>a {
-    text-decoration: none;
-    padding: 10px 25px;
-    color: white;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-  nav>ul>li>a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-  }
-
-/* header end */
-
-/* section 1 start */
-/* image */
-#sec1image {
-  background-image: url("images/desktop/image-transform.jpg");
-  background-position: center;
-}
-/* section 1 end */
-
-
-/* section 2 start */
-/* section 2 end */
-
-
-/* section 3 star */
-
-#section3 > .seccol {
-  justify-content: end;
-}
-
-#section3 > .seccol > h3,
-#section3 > .seccol > p,
-section#testimonial > h4,
-#section3 > .seccol {
-  text-align: center;
-}
-
-/* section 3 end */
+    /* section 2 */
+      #section2image {
+        background-image: url("images/desktop/image-transform.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    /* section 2 */
     
-
-/* section testimonial start */
-  section#testimonial {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  #testimonial > div > div > div{
-    float: left;
-    width: 31.33%;
-    padding: 20px 15px;
-    background-color: aqua;
-    text-align: center;
-  }
-
-  /* #testimonial > div >div{
-    
-  } */
-  .reviewbox img {
-    border-radius: 50%;
-    width: 100px;
-  }
-
-/* section testimonial  end*/
-
-    #sec2image {
-      background-image: url("images/mobile/image-stand-out.jpg");
-      /* The image used */
-      background-position: center;
+    /* section 3 */
+    #section3image {
+      background-image: url("images/desktop/image-stand-out.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+    /* section 3 */
 
-    #sec3image1 {
-      background-image: url("images/desktop/image-graphic-design.jpg");
-      /* The image used */
-      background-position: top;
-    }
+    /* learn mre botton */
+    /* .learnbutton {
+      font-family: Fraunces;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+    } */
 
-    #sec3image2 {
-      background-image: url("images/desktop/image-photography.jpg");
-      /* The image used */
-      background-position: top;
-    }
-    /* images */
    
-    
-    /* ************** */
- 
-    /* footer */
-    #footer {
-      background-color: var(--Dark-moderate);
-    }
-    footer {
-      height: 400px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      text-align: center;
-    }
+    /* Header */
+      /* header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
+      header nav ul li {
+        display: inline-block;
+      }
+
+      header div a img,
+      header nav
+      {
+        padding: 30px;
+      }
+
+      header nav ul li a {
+        text-decoration: none;
+        padding: 10px 25px;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      header nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 25px;
+      } */
+
+    
+      
 /* Desktop */
     @media all and (min-width:1025px) {
-      h1 {
+      /* h1 {
         margin-left: 13%;
         margin-right: 13%;
-      }
-
-      .seccol,
-      .reviewboxcontainer .column1{
-        padding: 5% 10%;
-      }
-      #testimonial > div > div {
-        width: 100%;
-      }
-      #testimonial > div > div > div {
-        margin: 0 1%;
-      }
+      } */
     }
 /* tablet  */
   @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -299,55 +235,135 @@ section#testimonial > h4,
     }
 /* mobile */
   @media all and (min-width: 480px) and (max-width: 768px) {
-      
+    #section2image {
+      height: 60vh;
     }
+    #section3image {
+      height: 60vh;
+    }
+    }
+
+/* >=LG */
+@media all and (max-width: 991px) {
+    .myheaderbg {
+      background-color: white;
+    }
+    
+    .myheaderbg > ul > li > a:hover {
+      background-color: var(--Yellow) !important;
+      color: var(--Very-dark-desaturated-blue);
+      padding: 10px 25px;  
+    }
+}
+
+@media all and (min-width: 992px) {
+  .myheaderbg > ul > li > a:hover {
+      background-color: white !important;
+      color: var(--Very-dark-desaturated-blue);
+    }
+}
+
+@media all and (min-width: 720px) {
+  .setpadding1 {
+    padding: 10%;
+  }
+}
+
+
+
   </style>
 </head>
 
 <body>
 
   <div class="main">
-    <!-- banner section start -->
-    <section class="section imageall" id="homebanner">
-      <!-- header -->
-      <header>
-        <!-- logo -->
-        <div id="logocontainer">
-          <a href="#">
-            <img src="images/logo.svg">
-          </a>
-        </div>
-        <!-- nav -->
-        <nav>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+    <!-- header -->
+    <header class="container-fluid fixed-top">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="#">
+              <img src="images/logo.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse myheaderbg justify-content-lg-end" id="navbarSupportedContent">
+              <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+    </header>
 
-      <h1>We are creatives</h1>
+    <!-- banner section start -->
+    <section class="container-fluid" id="homebanner">
+      <div class="row">
+        <div class="col pt-5">
+          <div class="space2"></div>
+          <h1>We are creatives</h1>
+        </div>
+      </div>
     </section>
     <!-- banner section  end-->
-
-
-
-
-    <!-- section1 start -->
-    <section class="section imageall" id="section1">
-      <div class="seccol">
-        <h2>Transform your brand</h2>
-        <p>We are a full-service creative agency specializing in helping brands grow fast.
-          Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <a class="learnbutton" href="#">Learn more</a>
-      </div>
-      <div class="seccol imageall" id="sec1image">
-        <div class="addspace"></div>
+    
+    <!-- section2 start -->
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 order-md-2" id="section2image">
+            <div class="addspace"></div>
+          </div>
+          <div class="col-md-6 order-1 d-flex justify-content-md-center flex-column setpadding1">
+            <h2 class="text-md-left">Transform your brand</h2>
+            <p class="text-md-left">We are a full-service creative agency specializing in helping brands grow fast.
+              Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a class="learnbutton text-md-left" href="#">Learn more</a>
+          </div>
+        </div>
+      </section>
+    <!-- section2 end -->
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 order-md-0" id="section3image">
+          <div class="addspace"></div>
+        </div>
+        <div class="col-md-6 order-1 d-flex justify-content-md-center flex-column setpadding1">
+          <h2 class="text-md-left">Stand out to the right audience</h2>
+          <p class="text-md-left">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <a class="learnbutton text-md-left" href="#">Learn more</a>
+        </div>
       </div>
     </section>
-    <!-- section1 end -->
+
+    <!-- section3 start -->
+
+
+    <!-- section3 end -->
+
+
+  <!-- template -->
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col">
+        
+      </div>
+      <div class="col">
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- template -->
 
 
     <!-- section2 start-->
@@ -364,6 +380,7 @@ section#testimonial > h4,
       </div>
     </div>
     <!-- section2 end-->
+
     <!-- section3 start-->
     <div class="section" id="section3">
       <div class="seccol imageall" id="sec3image1">
